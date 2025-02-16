@@ -1,0 +1,18 @@
+<h1>Wealth Management Uygulaması</h1>
+
+<!-- Basit bir navigasyon menüsü -->
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/sse" routerLinkActive="active">SSE (Server-Sent Events)</a>
+    </li>
+    <li>
+      <a routerLink="/ws" routerLinkActive="active">WebSocket</a>
+    </li>
+  </ul>
+</nav>
+
+<hr />
+
+<!-- Router Outlet, ilgili bileşeni (SsePageComponent, WsPageComponent) burada gösterir -->
+<router-outlet></router-outlet>
