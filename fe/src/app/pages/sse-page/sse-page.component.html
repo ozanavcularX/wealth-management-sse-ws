@@ -1,1 +1,37 @@
-<p>sse-page works!</p>
+<h2>Top 10 Nasdaq</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th>Volume</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let stock of nasdaqData">
+            <td>{{ stock.symbol }}</td>
+            <td>{{ stock.price }}</td>
+            <td>{{ stock.volume }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr />
+
+<h2>Top 10 Borsa İstanbul (BIST)</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th>Volume</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let stock of bistData">
+            <td>{{ stock.symbol }}</td>
+            <td>{{ stock.price }}</td>
+            <td>{{ stock.volume }}</td>
+        </tr>
+    </tbody>
+</table>
